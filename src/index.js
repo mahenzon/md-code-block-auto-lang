@@ -1,5 +1,6 @@
 import * as core from "@actions/core";
 import * as github from "@actions/github";
+import { Octokit } from "@octokit/rest";
 
 const MARKER = '<!-- markdown-code-block-checker -->';
 const MAX_CODE_PREVIEW = 50;
@@ -114,7 +115,7 @@ async function main() {
     const token = core.getInput('github-token', { required: true });
 
     const context = github.context;
-    const octokit = github.getOctokit(token);
+    const octokit = new Octokit({ auth: token });
 
     const actor = context.actor;
     const repo = context.repo.repo;
