@@ -1,16 +1,37 @@
-name: Hello World
-description: Greet someone and record the time
+name: Markdown Code Block Auto Lang
+description: Automatically sets a language for Markdown code blocks in PR/issue descriptions if missing.
 
 inputs:
-  who-to-greet: # id of input
-    description: Who to greet
+  github-token:
+    description: GitHub token
     required: true
-    default: World
+    default: ${{ github.token }}
+
+  language:
+    description: Language to set for code blocks without specified language
+    required: true
+
+  silent:
+    description: If true, no comments will be added to the PR/issue
+    required: false
+    default: 'false'
+
+  what-to-update:
+    description: |
+      Which event types to update. Options: pull_request, issue, all (default: all).
+      Accepts a single value or a multiline list.
+    required: false
+    default: |
+      all
 
 outputs:
-  time: # id of output
-    description: The time we greeted you
+  fixes:
+    description: Number of code blocks that were fixed
 
 runs:
   using: node20
   main: dist/index.js
+
+branding:
+  icon: code
+  color: blue
