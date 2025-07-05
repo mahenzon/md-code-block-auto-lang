@@ -229,7 +229,7 @@ async function main() {
           });
         }
       }
-      core.info(`Fixed ${fixCount} missing code block language(s) and notified the user.`);
+      core.info(`Fixed ${fixCount} missing code block language(s).`);
       core.setOutput('fixes', fixCount);
       return;
     } else if (checkerComment && errors.length === 0 && !silent) {
