@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "Suren Khorenyan",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/mahenzon/md-code-block-auto-lang/issues"
   },
