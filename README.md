@@ -1,5 +1,38 @@
 # Markdown Code Blocks Auto Set Language
 
+## **Why**
+
+Automatically update issue / pull request text code blocks - set language to apply syntax highlighting.
+
+### **Example result**
+
+This text in issue / pull request description will be automatically updated
+
+````markdown
+```
+print("Hello World")
+```
+
+To this:
+````
+````markdown
+```python
+print("Hello World")
+```
+````
+
+So it looks not boring as:
+
+```
+print("Hello World")
+```
+
+But highlighted as
+```python
+print("Hello World")
+```
+
+
 ## **Usage Examples**
 
 ### Example 1: Default (all PRs and issues, language = python)
