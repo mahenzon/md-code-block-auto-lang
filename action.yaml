@@ -3,7 +3,11 @@ description: Automatically sets a language for Markdown code blocks in PR/issue 
 
 inputs:
   github-token:
-    description: GitHub token
+    description: |
+      GitHub token.
+      The default one will work only for those who have access to the API.
+      For public projects you'll need to create a fine-grained
+      personal access token. Check README for step-by-step guide.
     required: true
     default: ${{ github.token }}
 
