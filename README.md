@@ -1,5 +1,8 @@
 # Markdown Code Blocks Auto Set Language
 
+[![Get it on the Marketplace](https://img.shields.io/badge/Get_it_on_the_Marketplace-informational?style=for-the-badge)](https://github.com/marketplace/actions/md-code-block-auto-lang)
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
+
 ## **Why**
 
 Automatically update issue / pull request text code blocks - set language to apply syntax highlighting.
