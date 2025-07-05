@@ -21,3 +21,10 @@ uses: mahenzon/md-code-block-auto-lang@2dc829a08d793a9f0832bb2292f351c571f38f8c
 with:
   who-to-greet: Suren Khorenyan
 ```
+
+# Development
+
+## Build
+```shell
+rollup --config rollup.config.js
+```
