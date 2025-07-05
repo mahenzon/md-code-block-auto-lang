@@ -1,15 +1,10 @@
 {
   "name": "md-code-block-auto-lang",
   "version": "1.0.0",
-  "description": "",
+  "description": "This action prints \"Hello World\" or \"Hello\" + the name of a person to greet to the log.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mahenzon/md-code-block-auto-lang.git"
   },
   "keywords": [],
   "author": "Suren Khorenyan",
