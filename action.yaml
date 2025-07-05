@@ -1,5 +1,6 @@
 name: Markdown Code Block Auto Lang
 description: Automatically sets a language for Markdown code blocks in PR/issue descriptions if missing.
+author: Suren Khorenyan
 
 inputs:
   github-token:
